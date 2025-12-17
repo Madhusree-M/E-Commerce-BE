@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Brown bunny",
+    "originalPrice": 300,
+    "sellingPrice": 250,
+    "image": "/toy1.jpg"
+  },
+  {
+    "name": "Evil Eye",
+    "originalPrice": 200,
+    "sellingPrice": 180,
+    "image": "/toy3.jpg"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Brown Bunny",
+    "description": "Cuteness baked in chocolate brown",
+    "image": "/toy1.jpg",
+    "price": 299
+  },
+  {
+    "id": 2,
+    "name": "White Blossom",
+    "description": "White and bright - just right",
+    "image": "/toy4.jpg",
+    "price": 349
+  },
+  {
+    "id": 3,
+    "name": "Little Panda",
+    "description": "A pocket size panda made to melt hearts",
+    "image": "/toy8.jpg",
+    "price": 499
+  },
+  {
+    "id": 4,
+    "name": "Baby Owl",
+    "description": "Wise eyes, warm heart",
+    "image": "/toy2.jpg",
+    "price": 299
+  },
+  {
+    "id": 5,
+    "name": "Red Rose",
+    "description": "Soft petals that never fade",
+    "image": "/toy5.jpg",
+    "price": 549
+  },
+  {
+    "id": 6,
+    "name": "Red Rose Bracelet",
+    "description": "A tiny rose to wrap your wrist in love",
+    "image": "/toy8.jpg",
+    "price": 299
+  },
+  {
+    "id": 7,
+    "name": "Evil Eye",
+    "description": "Carry positivity wherever you go",
+    "image": "/toy3.jpg",
+    "price": 499
+  },
+  {
+    "id": 8,
+    "name": "Love Pot",
+    "description": "A small pot that spreads smiles",
+    "image": "/toy6.jpg",
+    "price": 599
+  },
+  {
+    "id": 9,
+    "name": "Honey Bee",
+    "description": "A honey bee to sweeten your day",
+    "image": "/toy9.jpg",
+    "price": 79
+  },
+  {
+    "id": 10,
+    "name": "Bookmark",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy10.jpg",
+    "price": 499
+  },
+  {
+    "id": 11,
+    "name": "Sunflower",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy11.avif",
+    "price": 499
+  },
+  {
+    "id": 12,
+    "name": "Luffy's iconic Hat",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy12.jpg",
+    "price": 89
+  },
+  {
+    "id": 13,
+    "name": "Snowflakes",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy13.jpg",
+    "price": 59
+  },
+  {
+    "id": 14,
+    "name": "Strawberry",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy14.jpg",
+    "price": 79
+  },
+  {
+    "id": 15,
+    "name": "Little Star",
+    "description": "Soft and cute handmade bunny.",
+    "image": "/toy15.jpg",
+    "price": 59
+  },
+  {
+    "id": 16,
+    "name": "blue heart!!",
+    "price": 100,
+    "description": "desc",
+    "image": "url"
+  },
+  {
+    "id": 17,
+    "name": "mini teddy",
+    "description": "cute and lovely",
+    "price": "250",
+    "image": "'/toys6.jpg'"
+  },
+  {
+    "id": 18,
+    "name": "toy21",
+    "description": "desc21",
+    "price": "210",
+    "image": "img21"
+  }
+]
