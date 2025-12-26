@@ -72,4 +72,21 @@ const loginUser = async(req,res) => {
         res.status(400).json({error : err.message})
     }
 }
-module.exports = {registerUser , getUsers, loginUser}
+
+
+const getMe = async (req, res) => {
+  try {
+    const token = req.headers.authorization?.split(" ")[1];
+    if (!token) return res.status(401).json({ error: "Unauthorized" });
+
+    const decoded = jwt.verify(token, process.env.SECRET_KEY);
+    const user = await User.findById(decoded.id).select("-password");
+    if (!user) return res.status(404).json({ error: "User not found" });
+
+    res.status(200).json({ user });
+  } catch (err) {
+    res.status(401).json({ error: "Invalid token" });
+  }
+};
+
+module.exports = { registerUser, getUsers, loginUser, getMe };
