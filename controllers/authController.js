@@ -1,6 +1,9 @@
 const User = require("../models/User")
 const bcrypt = require("bcrypt")
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
+const Order = require("../models/Order");
+const Wishlist = require("../models/Wishlist");
+
 // we cant store passwords directly in db.. so we are creating a hashedPassword using bcrypt and storing it
 
 
@@ -73,18 +76,24 @@ const loginUser = async(req,res) => {
     }
 }
 
-
 const getMe = async (req, res) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
     if (!token) return res.status(401).json({ error: "Unauthorized" });
 
     const decoded = jwt.verify(token, process.env.SECRET_KEY);
+
     const user = await User.findById(decoded.id).select("-password");
     if (!user) return res.status(404).json({ error: "User not found" });
 
-    res.status(200).json({ user });
+    const orders = await Order.find({ user: decoded.id });
+
+    const wishlist = await Wishlist.findOne({ user: decoded.id });
+    const wishlistCount = wishlist?.items?.length || 0;
+
+    res.status(200).json({ user: { ...user._doc, wishlistCount }, orders });
   } catch (err) {
+    console.error(err);
     res.status(401).json({ error: "Invalid token" });
   }
 };
